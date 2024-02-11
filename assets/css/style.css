@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefdfd;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body main {
+  min-height: 100vh;
+}
+body main .ChevronDown {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  body main .ChevronDown {
+    margin: 6rem 0 3rem;
+  }
+}
+body main #SectionTitleContainer {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  body main #SectionTitleContainer {
+    margin: 2.5rem 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fefdfd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9e4f9;
+  border-radius: 0.25rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #88c5f2;
+}
+
+h1, h2, h3, h4, p, ul {
+  color: #091540;
+}
+
+span {
+  color: #add7f6;
+  text-shadow: 1px 1px 0 #091540, -1px 1px 0 #091540, -1px -1px 0 #091540, 1px -1px 0 #091540;
+}
+
+p {
+  text-align: justify;
+}
+
+.CardText > p, .Education > h2, .Work > h2, .TextSuccessCard > h1, .TextSuccessCard > p {
+  text-align: center;
+}
+
+.EducationList > p {
+  text-align: left;
+}
+
+h1, h2, h3, h4, .navbar-collapse {
+  font-weight: 700;
+}
+
+p, .form-control, .WorkList > ul {
+  font-weight: 500;
+}
+
+.FooterParagraph {
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4, p {
+  font-size: 16px;
+}
+
+.EducationList > p, .WorkList > p, .WorkList > ul, .FooterParagraph {
+  font-size: 14px;
+}
+
+.TextSuccessCard > h1 {
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  h1, h2 {
+    font-size: 44px;
+  }
+  .WorkList {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1, h2 {
+    font-size: 64px;
+  }
+  .WorkList {
+    text-align: justify;
+  }
+  .TextSuccessCard h1 {
+    font-size: 40px;
+  }
+  .TextSuccessCard p {
+    font-size: 20px;
+  }
+}
+.ButtonB, .ButtonA, .SubmitButton {
+  font-weight: 500;
+  font-size: 18px;
+  color: #add7f6;
+  padding: 8px 34px;
+  background-color: #091540;
+}
+.ButtonB:hover, .ButtonA:hover, .SubmitButton:hover {
+  color: #091540;
+  background-color: #add7f6;
+}
+
+.ButtonA, .SubmitButton {
+  border-radius: 30px 0 30px 0;
+}
+
+.ButtonB {
+  border-radius: 0 30px 0 30px;
+}
+
+.fa-circle-chevron-left,
+.fa-circle-chevron-right, .fa-circle-chevron-down {
+  font-weight: 700;
+  color: #add7f6;
+}
+
+.fa-circle-chevron-down {
+  font-size: 70px;
+}
+
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
+  font-size: 40px;
+}
+
+.CircleBlueButtonFooter, .CircleAzureButton, .CircleBlueButton {
+  color: #fefdfd;
+  margin: 0.25rem;
+}
+
+.CircleBlueButton {
+  background-color: #091540;
+}
+.CircleBlueButton:hover {
+  border: 1px solid #091540;
+}
+
+.CircleAzureButton {
+  background-color: #add7f6;
+}
+.CircleAzureButton:hover {
+  border: 1px solid #add7f6 !important;
+  color: #add7f6 !important;
+}
+
+.CircleBlueButtonFooter {
+  background-color: #091540;
+}
+.CircleBlueButtonFooter:hover {
+  border: 1px solid #091540;
+  background-color: #fefdfd;
+}
+
+@media screen and (min-width: 576px) {
+  .ButtonA, .ButtonB, .SubmitButton {
+    font-size: 20px;
+    padding: 12px 38px;
+  }
+  .fa-circle-chevron-down {
+    font-size: 100px;
+  }
+  .fa-circle-chevron-down:hover {
+    transform: scale(1.5);
+  }
+}
+header {
+  margin-top: 8rem;
+}
+header nav {
+  background-color: #add7f6;
+}
+header nav .navbar-collapse {
+  margin-right: 3rem;
+}
+header nav .navbar-collapse .nav-link {
+  color: #091540;
+}
+
+@media screen and (min-width: 992px) {
+  header .navbar-collapse {
+    display: flex;
+    justify-content: end;
+  }
+}
+#HomeSection {
+  height: 90%;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 992px) {
+  #HomeSection {
+    padding-top: 3.5rem;
+  }
+}
+#HomeSection .HomeImgColumn {
+  padding: 3rem 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+#HomeSection .HomeImgColumn .HomeImg {
+  width: 18rem;
+  height: 18rem;
+  background: url("/assets/media/img/profile.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #091540;
+}
+#HomeSection .BioColumn {
+  padding: 3rem 3rem 0;
+}
+
+#SkillSection {
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 992px) {
+  #SkillSection {
+    padding-top: 3.5rem;
+  }
+}
+#SkillSection .SkillTitles {
+  display: none;
+  visibility: hidden;
+}
+#SkillSection .SkillCardsContainer {
+  border: 0.5px;
+  border-radius: 60px 0;
+  background-color: #add7f6;
+  box-shadow: 0 1rem 1.5rem -0.45rem #091540;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+#SkillSection .SkillCardsContainer .SkillColumnLeft, #SkillSection .SkillCardsContainer .SkillColumnRight {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 3rem 0;
+}
+#SkillSection .SkillCardsContainer .SkillColumnLeft .SkillCard, #SkillSection .SkillCardsContainer .SkillColumnRight .SkillCard {
+  border-radius: 60px 0;
+  width: 360px;
+  height: 266px;
+}
+#SkillSection .SkillCardsContainer .SkillColumnLeft .SkillCard .SkillCardImg, #SkillSection .SkillCardsContainer .SkillColumnRight .SkillCard .SkillCardImg {
+  display: block;
+  width: 100%;
+}
+
+#ProjectsSection {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  #ProjectsSection {
+    padding-top: 3.5rem;
+  }
+}
+#ProjectsSection .ProjectsContainer {
+  border-radius: 60px 0;
+  padding: 0 0 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+#ProjectsSection .ProjectsContainer .card {
+  border-radius: 60px 0;
+  margin: 0 0.5rem 3rem;
+}
+#ProjectsSection .ProjectsContainer .card .card-img-top {
+  border-radius: 60px 0 0;
+}
+#ProjectsSection .ProjectsContainer .card .card-body .CardText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ContactSection {
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 992px) {
+  #ContactSection {
+    padding-top: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  #SkillSection .SkillCardsContainer .SkillColumnLeft, #SkillSection .SkillCardsContainer .SkillColumnRight {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0.25 0;
+  }
+  #ProjectsSection .ProjectsContainer .ProjectsFirstColumn, #ProjectsSection .ProjectsContainer .ProjectsSecondColumn, #ProjectsSection .ProjectsContainer .ProjectsThirdColumn {
+    display: flex;
+    justify-content: center;
+  }
+  #ProjectsSection .ProjectsContainer .ProjectsFirstColumn .card, #ProjectsSection .ProjectsContainer .ProjectsSecondColumn .card, #ProjectsSection .ProjectsContainer .ProjectsThirdColumn .card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #HomeSection {
+    margin-bottom: 3rem;
+  }
+  #HomeSection .HomeImgColumn .HomeImg {
+    width: 30rem;
+    height: 30rem;
+  }
+  #HomeSection .BioColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 6rem;
+  }
+  #SkillSection .SkillTitles {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+  }
+  #SkillSection .CardsContainer {
+    margin-top: auto;
+  }
+  #SkillSection .CardsContainer .SkillCard {
+    width: 460px;
+    height: 366px;
+  }
+  #ProjectsSection {
+    margin-bottom: 6rem;
+  }
+  #ProjectsSection .ProjectsContainer {
+    padding-bottom: 3rem;
+  }
+  #ProjectsSection .ProjectsContainer .ProjectsSecondColumn, #ProjectsSection .ProjectsContainer .ProjectsThirdColumn {
+    display: flex;
+    align-items: stretch;
+  }
+  #ProjectsSection .ProjectsContainer .card {
+    margin: 0.5rem;
+  }
+  #ProjectsSection .ProjectsContainer .card .card-img-top {
+    border-radius: 7px 7px 0 0;
+  }
+  #ProjectsSection .ProjectsContainer .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+#CurriculumSection {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  #CurriculumSection {
+    padding-top: 3.5rem;
+  }
+}
+#CurriculumSection .CurriculumTitleContainer {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+#CurriculumSection .CvCardContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#CurriculumSection .CvCardContainer .CvCard {
+  display: flex;
+  justify-content: center;
+  border: 0.5px;
+  border-radius: 60px 0;
+  background-color: #dbedfb;
+  box-shadow: 0 1rem 1.5rem -0.45rem #091540;
+  width: 90%;
+}
+#CurriculumSection .CvCardContainer .CvCard .Education {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+#CurriculumSection .CvCardContainer .CvCard .Education .EducationList {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+#CurriculumSection .CvCardContainer .CvCard .Work {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+#CurriculumSection .CvCardContainer .CvCard .Work .WorkList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  #CurriculumSection .CvCardContainer {
+    padding-bottom: 3rem;
+  }
+  #CurriculumSection .CvCardContainer .CvCard {
+    margin-bottom: 6rem;
+  }
+  #CurriculumSection .CvCardContainer .CvCard .Education .EducationList {
+    align-items: start;
+    margin: 1rem 4.5rem 0;
+  }
+  #CurriculumSection .CvCardContainer .CvCard .Work .WorkList {
+    align-items: start;
+    margin: 1rem 6.5rem 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #CurriculumSection {
+    margin-bottom: 6rem;
+  }
+  #CurriculumSection .CvCardContainer {
+    padding-bottom: 3rem;
+  }
+  #CurriculumSection .CvCardContainer .CvCard {
+    margin-bottom: 6rem;
+  }
+  #CurriculumSection .CvCardContainer .CvCard .Education .EducationList {
+    align-items: start;
+    margin: 1rem 7rem 0;
+  }
+  #CurriculumSection .CvCardContainer .CvCard .Work .WorkList {
+    align-items: start;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    margin: 1rem 6.5rem 0.5rem;
+  }
+}
+.FormCard {
+  padding: 3rem 0;
+  border-radius: 60px 0;
+  background-color: #e4f2fc;
+  box-shadow: 0 1rem 1.5rem -0.45rem #091540;
+}
+.FormCard .FormContainer {
+  margin: 0 0.5rem;
+}
+.FormCard .FormClass input,
+.FormCard .FormClass textarea,
+.FormCard .FormClass .form-control {
+  background-color: #add7f6;
+  border-radius: 30px 0 30px 0;
+  color: #091540;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding-left: 1rem;
+  outline: none;
+}
+.FormCard .FormClass ::-moz-placeholder {
+  color: #091540;
+  padding: 0 0 0 1rem;
+}
+.FormCard .FormClass ::placeholder {
+  color: #091540;
+  padding: 0 0 0 1rem;
+}
+.FormCard .FormClass .FormColumnRight .form-control {
+  border-radius: 30px 0 30px 0;
+  background-color: #add7f6;
+}
+.FormCard .FormClass .FormColumnLeft .form-control {
+  border-radius: 0 30px 0 30px;
+  background-color: #add7f6;
+}
+.FormCard .FormClass .SubmitButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  #ContactsSection .FormCard .FormContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .FormCard .FormContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FormCard .FormClass {
+    width: 100vh;
+  }
+  .FormCard .FormClass ::-moz-placeholder {
+    color: #091540;
+    padding-left: 1rem;
+  }
+  .FormCard .FormClass ::placeholder {
+    color: #091540;
+    padding-left: 1rem;
+  }
+}
+footer {
+  background-color: #add7f6;
+  min-height: 14vh;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .ChevronUp {
+  margin: 1rem 0 0.5rem;
+}
+footer .SocialAndCopyright .Social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .ChevronUp {
+    margin-right: 1rem;
+  }
+  footer .SocialAndCopyright {
+    margin: 1rem 0 1rem 0;
+  }
+  footer .SocialAndCopyright .FooterParagraph {
+    margin-left: 1rem;
+  }
+}
+#MainSuccess {
+  overflow-y: hidden;
+}
+#MainSuccess #SuccessSection {
+  padding-top: 2rem;
+  margin-top: 6rem;
+}
+@media screen and (min-width: 992px) {
+  #MainSuccess #SuccessSection {
+    padding-top: 3.5rem;
+  }
+}
+#MainSuccess #SuccessSection .FormSuccessContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#MainSuccess #SuccessSection .FormSuccessContainer .SuccessIcon {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+#MainSuccess #SuccessSection .FormSuccessContainer .TextSuccess .TextSuccessCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 60px 0;
+  background-color: #dbedfb;
+  box-shadow: 0 1rem 1.5rem -0.45rem #091540;
+  width: 98%;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  #MainSuccess #SuccessSection {
+    margin-top: 3rem;
+  }
+  #MainSuccess #SuccessSection .FormSuccessContainer .SuccessIcon {
+    width: 186px;
+  }
+  #MainSuccess #SuccessSection .FormSuccessContainer .TextSuccess {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #MainSuccess #SuccessSection .FormSuccessContainer .TextSuccess .TextSuccessCard {
+    width: 50%;
+    padding: 2rem 0;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

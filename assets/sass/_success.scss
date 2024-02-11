@@ -1,0 +1,60 @@
+#MainSuccess {
+    overflow-y: hidden;
+
+    #SuccessSection {
+        @include sections-spacing;
+        margin-top: 6rem;
+    
+        .FormSuccessContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            .SuccessIcon {
+                width: 140px;
+                margin-bottom: 1rem;
+            }
+
+            .TextSuccess {
+                .TextSuccessCard {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 60px 0;
+                    background-color: lighten($azure-color, 10%);
+                    box-shadow: 0 1rem 1.5rem -0.45rem $blue-color;
+                    width: 98%;
+                    padding: 1rem 0;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    #MainSuccess {
+        #SuccessSection {
+            margin-top: 3rem;
+        
+            .FormSuccessContainer {               
+                .SuccessIcon {
+                    width: 186px;
+                }
+
+                .TextSuccess {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .TextSuccessCard {
+                        width: 50%;
+                        padding: 2rem 0;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+    }   
+}

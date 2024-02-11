@@ -1,0 +1,83 @@
+.FormCard {
+    padding: 3rem 0;
+    border-radius: 60px 0;
+    background-color: lighten($azure-color, 12%);
+    box-shadow: 0 1rem 1.5rem -0.45rem $blue-color;
+
+    .FormContainer {
+        margin: 0 0.5rem;
+    }
+
+    .FormClass {     
+        input,
+        textarea,
+        .form-control {
+            background-color: $azure-color;
+            border-radius: 30px 0 30px 0;
+            color: $blue-color;
+            margin-bottom: 0.5rem;
+            border: none;
+            padding-left: 1rem;
+            outline: none;
+        }
+
+        ::placeholder {
+            color: $blue-color;
+            padding: 0 0 0 1rem;
+        }
+
+        .FormColumnRight {
+            .form-control {
+                border-radius: 30px 0 30px 0;
+                background-color: $azure-color;
+            }
+        }
+
+        .FormColumnLeft {
+            .form-control {
+                border-radius: 0 30px 0 30px;
+                background-color: $azure-color;
+            }
+        }
+
+        .SubmitButtonContainer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// media queries tablet
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+   #ContactsSection {
+    .FormCard {
+        .FormContainer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+   }  
+}
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    .FormCard {
+        .FormContainer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .FormClass {
+            width: 100vh;
+
+            ::placeholder {
+                color: $blue-color;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

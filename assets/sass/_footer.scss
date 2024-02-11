@@ -1,0 +1,44 @@
+footer {
+    background-color: $azure-color;
+    min-height: 14vh;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    .ChevronUp {
+        margin: 1rem 0 0.5rem;
+    }
+
+    .SocialAndCopyright {
+        .Social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    }    
+}
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+         
+        .ChevronUp {
+            margin-right: 1rem;
+        }
+
+        .SocialAndCopyright {
+            margin: 1rem 0 1rem 0;
+            
+            .FooterParagraph{
+                margin-left: 1rem;
+            }
+        }
+    }    
+}

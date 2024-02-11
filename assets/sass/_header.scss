@@ -1,0 +1,25 @@
+header {
+    margin-top: 8rem;
+
+    nav {
+        background-color: $azure-color;
+
+       .navbar-collapse {
+            margin-right: 3rem; 
+
+            .nav-link {
+                color: $blue-color;
+            }
+        }
+    }
+}
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    header {
+        .navbar-collapse {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}

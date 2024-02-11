@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Hi,I'm Noemi Sonlieti a Full Stack Development Student">
+  <meta>
+  <meta name="keywords" content="Website Portfolio, Full Stack Development Student, Junior Full Stack Developer, HTML, CSS, Bootstrap, MDB, Sass, Tailwind, Wordpress">
+  <meta name="author" content="Noemi Sonlieti">
+  <title>Noemi Sonlieti</title>
+
+  <!-- Open Graph -->
+  <meta name="og:title" property="og:title" content="Noemi Sonlieti">
+  <meta name="og:type" property="og:type" content="website">
+  <meta name="og:description" property="og:description"
+    content="Hi,I'm Noemi Sonlieti a Full Stack Development Student">
+  <meta name="og:image" property="og:image" content="/assets/media/img/MyPortfolio-preview.png">
+  <meta name="og:image:alt" property="og:image:alt" content="My Portfolio preview image">
+  <meta name="og:url" property="og:url" content="https://noemisonlieti.github.io">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="/assets/media/favicon/favicon.ico">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/media/img/navbar-image.svg" alt="navbar-image">
+        </a>
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#SkillSection">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ProjectsSection">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ContactSection">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="HomeSection">
+      <div class="container-fluid px-0 g-0 row d-flex">
+        <div class="HomeImgColumn col-sm-6 col-md-12 col-lg-5 col-xl-4 order-lg-2">
+          <div class="HomeImg"></div>
+        </div>
+        <div class="BioColumn col-sm-6 col-md-12 col-lg-7 col-xl-8 order-lg-1">
+          <h1>Hi, I'm <span>Noemi Sonlieti</span></h1>
+          <p>I am highly motivated by a passion for learning and a curious nature.
+            My current focus is on studying <strong>Full Stack Development</strong>, as it allows me to combine my interests in
+            problem-solving, creativity, and technology.
+            I am dedicated to constantly expanding my knowledge and actively seek out challenges
+            to improve my skills both personally and professionally.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="/about.html">
+              <button type="button" class="ButtonA">About</button>
+            </a>
+            <a href="#ContactSection">
+              <button type="button" class="ButtonB">Contact</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ChevronDown">
+      <a href="#SkillSection" role="button">
+        <i class="fas fa-circle-chevron-down fa-fw"></i>
+      </a>
+    </div>
+
+    <section id="SkillSection">
+      <div id="SectionTitleContainer">
+        <h2 >My Skills</h2>
+      </div>
+      <div class="SkillTitles container-fluid px-0 g-0 row">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <h2><span>Technologies</span></h2>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <h2><span>Languages</span></h2>
+        </div>
+      </div>
+      <div class="SkillCardsContainer container-fluid px-0 g-0 row">
+        <div class="SkillColumnLeft col-lg-6">
+          <!--Card carousel wrapper 1 - start -->
+          <div id="Technologies" class="SkillCard carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init> 
+            <!-- Carousel content = inner -->
+            <div class="SkillCard carousel-inner">
+              <!-- item 1 -->
+              <div class="SkillCard carousel-item active">
+                <img src="assets/media/img/html5.svg" alt="html5-skill" class="SkillCardImg">
+              </div>
+              <!-- item 2-->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/css3.svg" alt="css3-skill" class="SkillCardImg">
+              </div>
+              <!-- item 3 -->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/sass.svg" alt="sass-skill" class="SkillCardImg">
+              </div>
+              <!-- item 4-->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/bootstrap.svg" alt="bootstrap-skill" class="SkillCardImg">
+              </div>
+              <!-- item 5 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/mdb.svg" alt="mdb-bootstrap-skill" class="SkillCardImg">
+              </div>
+              <!-- item 6 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/tailwind.svg" alt="tailwind" class="SkillCardImg">
+              </div>
+              <!-- item 7-->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/visual-studio-code.svg" alt="visual-studio-code-skill" class="SkillCardImg">
+              </div>
+              <!-- item 8 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/wordpress.svg" alt="wordpress-skill" class="SkillCardImg">
+              </div>
+              <!-- item 9 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/figma.svg" alt="figma-skill" class="SkillCardImg">
+              </div>
+              <!-- item 10 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/canva.svg" alt="canva-skill" class="SkillCardImg">
+              </div>
+              <!-- item 11 -->
+              <div class="SkillCard carousel-item ">
+                <img src="assets/media/img/microsoft.svg" alt="microsoft-skill" class="SkillCardImg">
+              </div>
+            </div>
+            <!-- Carousel Controls-->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#Technologies" data-mdb-slide="prev">
+              <i class="fas fa-circle-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#Technologies" data-mdb-slide="next">
+              <i class="fas fa-circle-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div> <!--Card carousel wrapper 1 - end -->
+        </div>
+        <div class="SkillColumnRight col-lg-6">
+          <!--Card carousel wrapper 2 - start -->
+          <div id="Languages" class="SkillCard carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+            <!-- Carousel content = inner -->
+            <div class="SkillCard carousel-inner">
+              <!-- item 1 -->
+              <div class="SkillCard carousel-item active">
+                <img src="assets/media/img/italian.svg" alt="italian-language-skill" class="SkillCardImg">
+              </div>
+              <!-- item 2 -->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/english.svg" alt="english-language-skill" class="SkillCardImg">
+              </div>
+              <!-- item 3-->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/german.svg" alt="german-language-skill" class="SkillCardImg">
+              </div>
+              <!-- item 4 -->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/japanese.svg" alt="japanese-language-skill" class="SkillCardImg">
+              </div>
+              <!-- item 5 -->
+              <div class="SkillCard carousel-item">
+                <img src="assets/media/img/french.svg" alt="french-language-skill" class="SkillCardImg">
+              </div>
+            </div>
+            <!-- Carousel Controls-->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#Languages" data-mdb-slide="prev">
+              <i class="fas fa-circle-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#Languages" data-mdb-slide="next">
+              <i class="fas fa-circle-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div> <!--Card carousel wrapper 2 - end -->
+        </div>
+      </div>
+    </section>
+   
+    <div class="ChevronDown">
+      <a href="#ProjectsSection" role="button">
+        <i class="fas fa-circle-chevron-down fa-fw"></i>
+      </a>
+    </div>
+
+    <section id="ProjectsSection">
+      <div id="SectionTitleContainer">
+        <h2>My Projects</h2>
+      </div>
+      <div class="ProjectsContainer container-fluid px-0 g-0 row">
+        <div class="ProjectsFirstColumn col-lg-4">
+          <div class="card">
+            <img src="/assets/media/img/CryptoBEasy.webp" class="card-img-top" alt="CryptoBEasy cover"/>
+            <div class="card-body">
+              <div class="CardText">
+                <h3>Crypto<i class="fa-brands fa-bitcoin"></i>easy</h3>
+                <p>Bitcoin Wallet Web App for smartphones</p>
+              </div>
+              <div class="CardSocial">
+                <a class="CircleBlueButton btn btn-floating" href="https://github.com/noemisonlieti/CryptoBEasy"
+                  target="_blank" role="button">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a class="CircleAzureButton btn btn-floating" href="https://cryptobeasy.vercel.app/"
+                  target="_blank" role="button">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ProjectsSecondColumn col-lg-4">
+          <div class="card">
+            <img src="/assets/media/img/MyPortfolio.webp" class="card-img-top"
+              alt="My Portfolio cover" />
+            <div class="card-body">
+              <div class="CardText">
+                <h3>Portfolio</h3>
+                <p>My personal Portfolio</p>
+              </div>
+              <div class="CardSocial">
+                <a class="CircleBlueButton btn btn-floating" href="https://github.com/noemisonlieti/noemisonlieti.github.io" 
+                  target="_blank" role="button">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a class="CircleAzureButton btn btn-floating" href="https://noemisonlieti.github.io"
+                  target="_blank" role="button">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ProjectsThirdColumn col-lg-4">
+          <div class="card">
+            <img src="/assets/media/img/NewProject.webp" class="card-img-top"
+              alt="New Project cover"/>
+            <div class="card-body">
+              <div class="CardText">
+                <h3>Coming Soon</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="CardSocial">
+                <a class="CircleBlueButton btn btn-floating" href="#!" role="button">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a class="CircleAzureButton btn btn-floating" href="#!" role="button">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ChevronDown">
+      <a href="#ContactSection" role="button">
+        <i class="fas fa-circle-chevron-down fa-fw"></i>
+      </a>
+    </div>
+
+    <section id="ContactSection">
+      <div id="SectionTitleContainer">
+        <h2>Contact</h2>
+      </div>
+      <div class="FormCard">
+        <div class="FormContainer">
+          <form class="FormClass" action="https://formsubmit.co/noemi.sonlieti@gmail.com" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Success Page -->
+            <input type="hidden" name="_next" value="/success.html">
+            <!-- 2 column grid layout with text inputs for the full name and mobile -->
+            <div class="row mb-4">
+              <div class="FormColumnRight col-12 col-sm">
+                <input type="text" name="Full Name" id="fullName" placeholder="Full Name" class="form-control"/>
+              </div>
+              <div class="FormColumnLeft col-12 col-sm">
+                <input type="tel" name="Mobile" id="mobileNumber" placeholder="Mobile" class="form-control"/>
+              </div>
+            </div>
+            <!-- 2 column grid layout with text inputs for the full email address and email subject -->
+            <div class="row mb-4">
+              <div class="FormColumnRight col-12 col-sm">
+                <input type="email" name="Email Address" id="emailAddress" placeholder="Email Address"
+                  class="form-control" required />
+              </div>
+              <div class="FormColumnLeft col-12 col-sm">
+                <input type="text" name="Email Subject" id="emailSubject" placeholder="Email Subject"
+                  class="form-control" />
+              </div>
+            </div>
+            <!-- Message input -->
+            <div class="mb-4">
+              <textarea name="Message" id="yourMessage" placeholder="Your Message" class="form-control"
+                rows="4"></textarea>
+            </div>
+            <!-- Submit button -->
+            <div class="SubmitButtonContainer">
+              <button type="submit" class="SubmitButton">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ChevronUp">
+      <a class="CircleBlueButtonFooter btn btn-floating" href="#" role="button">
+        <i class="fas fa-chevron-up fa-fw"></i>
+      </a>
+    </div>
+    <div class="SocialAndCopyright">
+      <div class="Social">
+        <a class="CircleBlueButtonFooter btn btn-floating" href="https://github.com/noemisonlieti"
+          target="_blank" role="button">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="CircleBlueButtonFooter btn btn-floating" href="https://www.linkedin.com/in/noemi-sonlieti" target="_blank"
+          role="button">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="FooterParagraph">Copyright © 2024 Noemi Sonlieti | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <!-- javascript file -->
+  <script type="text/javascript" src="/assets/js/script.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+// font config
+$font-stack:'Montserrat', sans-serif;
+$blue-color: #091540;
+$azure-color: #add7f6;
+$white-color: #fefdfd;
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+// sections spacing config
+@mixin sections-spacing {
+    padding-top : 2rem;
+    
+    @media screen and (min-width: 992px) {
+        padding-top: 3.5rem;
+    }
+}
+
+// main config 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white-color;
+    font-family: $font-stack;
+    max-width: 100%;
+    overflow-x: hidden;  
+    
+    main {
+        min-height: 100vh;   
+        
+        .ChevronDown {
+            margin-top: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (min-width: 992px) {
+                margin: 6rem 0 3rem;
+            }
+        }
+
+        #SectionTitleContainer {
+            margin: 4rem 0;
+            display: flex;
+            justify-content: center;
+        
+            @media screen and (min-width: 992px) {
+                margin: 2.5rem 0;
+            }
+        }
+    }
+}
+
+// scrollbar config
+// set custom style to scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 0.25rem
+}
+
+::-webkit-scrollbar-track {
+    background-color: $white-color;
+}
+
+// handle 
+::-webkit-scrollbar-thumb {
+    background-color: lighten($azure-color, 6);
+    border-radius: 0.25rem;
+
+    &:hover {
+        background-color: darken($azure-color, 8);
+    }
+}

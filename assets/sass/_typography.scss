@@ -1,0 +1,92 @@
+// text color
+h1, h2 , h3 , h4 , p , ul  {
+    color: $blue-color;
+}
+
+span {
+    color:$azure-color;
+    text-shadow:
+    1px 1px 0 $blue-color,
+    -1px 1px 0 $blue-color,
+    -1px -1px 0 $blue-color,
+    1px -1px 0 $blue-color;
+}
+
+// text alignment 
+p {
+    text-align: justify;
+}
+
+.CardText > p, .Education > h2 , .Work > h2, .TextSuccessCard > h1, .TextSuccessCard > p {
+    text-align: center;
+} 
+
+.EducationList > p {
+    text-align: left;
+}
+
+// font-weight
+h1, h2 , h3 , h4 , .navbar-collapse {
+    font-weight: map-get($font-weights , bold );
+}
+
+p, .form-control, .WorkList > ul {
+    font-weight: map-get($font-weights , medium );
+}
+
+.FooterParagraph{
+    font-weight: map-get($font-weights , regular );
+}
+
+// font-size
+h1, h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 , p {
+    font-size: 16px;
+}
+
+.EducationList > p, .WorkList > p, .WorkList > ul, .FooterParagraph {
+    font-size: 14px;
+}
+
+.TextSuccessCard > h1 {
+    font-size: 28px;
+}
+
+// media queries tablet
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    h1, h2 {
+        font-size: 44px; 
+    } 
+  
+    .WorkList {
+        text-align: justify;
+    }
+}
+
+// media queries desktop
+@media only screen and (min-width: 992px) {
+    h1, h2 {
+        font-size: 64px;
+    }
+
+    .WorkList {
+        text-align: justify;
+    }
+
+    .TextSuccessCard  {
+        h1 {
+            font-size: 40px;
+        } 
+
+        p {
+            font-size: 20px;
+        }
+    }
+}

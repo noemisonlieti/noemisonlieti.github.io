@@ -1,0 +1,111 @@
+#CurriculumSection {
+    @include sections-spacing;
+    margin-bottom: 1rem;
+
+    .CurriculumTitleContainer {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0;
+    }
+
+    .CvCardContainer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+
+        .CvCard {
+            display: flex;
+            justify-content: center;
+            border: 0.5px;
+            border-radius: 60px 0;
+            background-color: lighten($azure-color, 10%);
+            box-shadow: 0 1rem 1.5rem -0.45rem $blue-color;
+            width: 90%;
+
+            .Education {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+        
+                .EducationList {
+                    margin-top: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 2rem;
+                }
+            }
+        
+            .Work {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+
+                .WorkList {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
+
+// media queries tablet
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    #CurriculumSection {
+        .CvCardContainer {
+            padding-bottom: 3rem;
+
+            .CvCard {
+                margin-bottom: 6rem;
+
+                .Education {
+                    .EducationList {
+                        align-items: start;
+                        margin: 1rem 4.5rem 0;
+                    }
+                }
+            
+                .Work {
+                    .WorkList {
+                        align-items: start;
+                        margin: 1rem 6.5rem 0;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    #CurriculumSection {
+        margin-bottom: 6rem;
+
+        .CvCardContainer {
+            padding-bottom: 3rem;
+
+            .CvCard {
+                margin-bottom: 6rem;
+
+                .Education {            
+                    .EducationList {
+                        align-items: start;
+                        margin: 1rem 7rem 0;
+                    }
+                }
+            
+                .Work {
+                    .WorkList {
+                        align-items: start;
+                        margin-left: 6.5rem;
+                        margin-right: 6.5rem;
+                        margin: 1rem 6.5rem 0.5rem;
+                    }
+                }
+            }
+        }  
+    }  
+}

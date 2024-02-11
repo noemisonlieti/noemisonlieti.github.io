@@ -1,0 +1,87 @@
+%PetalButton {
+    font-weight: map-get($font-weights , medium );
+    font-size: 18px;
+    color: $azure-color;
+    padding: 8px 34px;
+    background-color: $blue-color;
+    
+    &:hover {
+        color: $blue-color;
+        background-color: $azure-color;
+    }
+} 
+
+.ButtonA, .SubmitButton {
+   @extend %PetalButton; 
+   border-radius: 30px 0 30px 0;
+}
+
+.ButtonB {
+    @extend %PetalButton;    
+    border-radius: 0 30px 0 30px;   
+}
+
+%ChevronButton {
+    font-weight: map-get($font-weights , bold );
+    color: $azure-color;
+}
+
+.fa-circle-chevron-down {
+    @extend %ChevronButton;
+    font-size: 70px;
+}
+
+.fa-circle-chevron-left, 
+.fa-circle-chevron-right {
+    @extend %ChevronButton;
+    font-size: 40px;
+}
+
+%CircleLinkButton {
+    color: $white-color;
+    margin: 0.25rem;
+}
+
+.CircleBlueButton {
+    @extend %CircleLinkButton;
+    background-color: $blue-color;
+
+    &:hover {
+        border: 1px solid $blue-color;
+    }
+}
+
+.CircleAzureButton {
+    @extend %CircleLinkButton;
+    background-color: $azure-color;
+
+    &:hover {
+        border: 1px solid $azure-color !important;
+        color: $azure-color !important;
+    }
+}
+
+.CircleBlueButtonFooter {
+    @extend %CircleLinkButton;
+    background-color: $blue-color;
+
+    &:hover {
+        border: 1px solid $blue-color;
+        background-color: $white-color;
+    }
+}
+
+//media queries tablet and desktop 
+@media screen and (min-width: 576px) {
+    .ButtonA, .ButtonB, .SubmitButton {
+        font-size: 20px;
+        padding: 12px 38px;
+    }
+   
+    .fa-circle-chevron-down {
+        font-size: 100px;
+        &:hover {
+            transform: scale(1.5); 
+        }
+    }
+}
